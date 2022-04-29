@@ -29,7 +29,8 @@
     background: #BF895A; 
     border: #BF895A solid 10px;
     border-radius: 15px; 
-     
+    text-decoration: none;
+    color: #F2F2F2;
 }
 .menu{
     background-color: #BF895A;
@@ -56,16 +57,17 @@
     color:  #FFFFFF;
     font-family: 'Italianno'; 
     
+    
 }
 footer{
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 }
 .redes{
     display: flex;
     justify-content: flex-end;
-    
-    border: #BF895A solid 2px;
+    width: 100%;
 }
 .redes img{
     width: 50px ;
@@ -87,7 +89,7 @@ h1{
 .contexto{
     font-family:'Judson' ;
     font-size: 30px;
-    width: 50px;
+    
 
 }
 .horarios_img{
@@ -96,11 +98,12 @@ h1{
     
 }
 .horarios{
-    border-bottom: #BF895A solid 30px;
-    color: black;
+    background-color: #BF895A;
+    color: #FFFFFF;
     font-family:'Judson';
-    border: 2px solid black;
-    width: 300px;
+    width: 250px;
+    text-align: center;
+    
 }
 .horarioTitulo{
     font-family:'Italianno';
@@ -115,15 +118,103 @@ h1{
     justify-content:flex-start;
 
 }
-
-
-
-
-
-
-
-
-
-
-
+.piePaginahis{
+    color: black;
+    font-family:'Italianno';
+    font-size: 25px;
+}
+/*galeria*/
+.imagenes{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    border: black solid 2px;
+    color: #5D5D5D;
     
+}
+.colorFondo{
+    background-color: #5D5D5D;
+
+}
+.galery{
+    border-radius: 20px;
+    margin: 20px;
+    width: 200px;
+}
+ /*menu*/
+
+ .inicioMenu{
+     display: flex;
+     justify-content: space-between;
+     align-items: baseline;
+
+ }
+.platos{
+    background: #BF895A; 
+    border: #BF895A solid 10px;
+    border-radius: 15px; 
+    text-decoration: none;
+    color: #F2F2F2;
+   
+}
+.cerveza{
+    background: #BF895A; 
+    border: #BF895A solid 10px;
+    border-radius: 15px; 
+    text-decoration: none;
+    color: #F2F2F2;
+
+}
+.cocteles{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'Judson';
+    color: #FFFFFF;
+}
+.coctelesEspecificos{
+    width: 50% ;
+}
+.imgLimon{
+    width: 80% ;
+}
+
+.precios{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+ .cocteles h2{
+     font-family: 'Italianno';
+     color: #BF895A;
+
+ }
+/*cervezas*/
+
+.tituloCevezas{   
+    font-family: 'Judson';
+    color: #FFFFFF;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
