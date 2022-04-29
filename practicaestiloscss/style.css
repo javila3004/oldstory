@@ -1,0 +1,129 @@
+.cuerpo{
+    background-image: url("../imagenes/fondoinicio.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    height: 100%;
+}
+.logo{
+
+    width: 900px;
+    height: 550px;
+    margin-left: 220px;
+}
+.barraInicio a:link{
+    text-decoration: none;
+    color: #F2F2F2;
+}
+.barraInicio a:visited{
+    color: #F2F2F2;
+    
+}
+.barraInicio{
+    display:flex;
+    justify-content: space-evenly;
+    font-family: 'Italianno';
+    font-size: 25px;
+}
+.inicio{
+    background: #BF895A; 
+    border: #BF895A solid 10px;
+    border-radius: 15px; 
+     
+}
+.menu{
+    background-color: #BF895A;
+    border: #BF895A solid  10px;
+    border-radius: 15px;
+}
+.OLDSTORY{
+    background-color: #BF895A;
+    border: #BF895A solid 10px;
+    border-radius: 10px;
+}
+.historia{
+    background-color: #BF895A;
+    border: #BF895A solid 10px;
+    border-radius: 10px;
+}
+
+.galeria{
+    background-color: #BF895A;
+    border: #BF895A solid 10px;
+    border-radius: 10px;
+}
+.piePagina{
+    color:  #FFFFFF;
+    font-family: 'Italianno'; 
+    
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+.redes{
+    display: flex;
+    justify-content: flex-end;
+    
+    border: #BF895A solid 2px;
+}
+.redes img{
+    width: 50px ;
+    height: 50px;
+}
+/*history*/
+h1{
+    font-family:'Italianno';
+    color: #BF895A;
+}
+
+.ImagenFondo{
+    background-image: url("../imagenes/FondoHistory.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    height: 100%;
+}
+.contexto{
+    font-family:'Judson' ;
+    font-size: 30px;
+    width: 50px;
+
+}
+.horarios_img{
+    width: 100% ;
+    margin: 0;
+    
+}
+.horarios{
+    border-bottom: #BF895A solid 30px;
+    color: black;
+    font-family:'Judson';
+    border: 2px solid black;
+    width: 300px;
+}
+.horarioTitulo{
+    font-family:'Italianno';
+    font-size: 40px;
+}
+.todo{
+    display:flex;
+    justify-content:space-between    ;
+}
+.tituloHistoria{
+    display:flex;
+    justify-content:flex-start;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+    
