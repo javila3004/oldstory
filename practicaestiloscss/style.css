@@ -195,11 +195,35 @@ h1{
     font-family: 'Judson';
     color: #FFFFFF;
 
-
 }
+/*ubicacion*/
 
 
+.imagenesUbicacion{
+    display: flex;
+    justify-content: space-between;
+    border: black solid 10px;
+    width: 10%;
+    gap: 40px;
+}
+.imgUbicacion{
+    width:100% ;
+}
+.redesOrisontal{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    color: #FFFFFF;
+}
+.informacion{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Italianno' ;
 
+    width: 100%;
+    color: #FFFFFF;
+    text-align: center;
+}
 
 
 
