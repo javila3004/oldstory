@@ -1,19 +1,21 @@
 .cuerpo{
-    background-image: url("../imagenes/fondoinicio.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; 
-    height: 100%;
+    background-color: black;
 }
-.logo{
-
+/*.logo{
     width: 900px;
-    height: 550px;
+    height: 850px;
     margin-left: 220px;
+}*/
+#text-white{
+    color: white;
 }
 .barraInicio a:link{
     text-decoration: none;
     color: #F2F2F2;
+}
+.barraInicio a:hover{
+    
+
 }
 .barraInicio a:visited{
     color: #F2F2F2;
@@ -22,40 +24,47 @@
 .barraInicio{
     display:flex;
     justify-content: space-evenly;
-    font-family: 'Italianno';
+    font-family: 'Lora', serif;
     font-size: 25px;
 }
+.ubicacion{
+    background: black; 
+    border:black solid 10px;
+    border-radius: 15px; 
+    text-decoration: none;
+    color: #F2F2F2;
+}
 .inicio{
-    background: #BF895A; 
-    border: #BF895A solid 10px;
+    background: black; 
+    border:black solid 10px;
     border-radius: 15px; 
     text-decoration: none;
     color: #F2F2F2;
 }
 .menu{
-    background-color: #BF895A;
-    border: #BF895A solid  10px;
+    background-color: black;
+    border: black solid  10px;
     border-radius: 15px;
 }
 .OLDSTORY{
-    background-color: #BF895A;
-    border: #BF895A solid 10px;
+    background-color: black;
+    border:black solid 10px;
     border-radius: 10px;
 }
 .historia{
-    background-color: #BF895A;
-    border: #BF895A solid 10px;
+    background-color: black;
+    border: black solid 10px;
     border-radius: 10px;
 }
 
 .galeria{
-    background-color: #BF895A;
-    border: #BF895A solid 10px;
+    background-color: black ;
+    border: black solid 10px;
     border-radius: 10px;
 }
 .piePagina{
     color:  #FFFFFF;
-    font-family: 'Italianno'; 
+    font-family: 'Lora', serif; 
     
     
 }
@@ -72,6 +81,7 @@ footer{
 .redes img{
     width: 50px ;
     height: 50px;
+
 }
 /*history*/
 h1{
@@ -225,13 +235,24 @@ h1{
     text-align: center;
 }
 
+/* FORMULARIOS */
+.fondoFormulario{
+    background-color: #803B04;
 
+}
 
+.logo1{
+    width: 900px;
+    height: 550px;
+    margin-left: 220px;
+}
 
+.formulario{
+    background-color: #BF895A;
+    border: #BF895A solid 20px;
+    border-radius: 10px;
 
-
-
-
+}
 
 
 
