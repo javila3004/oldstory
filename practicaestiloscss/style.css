@@ -6,19 +6,14 @@
     height: 850px;
     margin-left: 220px;
 }*/
-#text-white{
-    color: white;
-}
+
 .barraInicio a:link{
     text-decoration: none;
-    color: #F2F2F2;
-}
-.barraInicio a:hover{
-    
-
+    color: #E8D8A5;
+;
 }
 .barraInicio a:visited{
-    color: #F2F2F2;
+    color: #E8D8A5;
     
 }
 .barraInicio{
@@ -64,9 +59,8 @@
 }
 .piePagina{
     color:  #FFFFFF;
-    font-family: 'Lora', serif; 
-    
-    
+    font-family: 'Lora', serif;  
+    width: 00px; 
 }
 footer{
     display: flex;
@@ -76,11 +70,11 @@ footer{
 .redes{
     display: flex;
     justify-content: flex-end;
-    width: 100%;
+    
 }
 .redes img{
-    width: 50px ;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 
 }
 /*history*/
