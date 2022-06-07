@@ -1,11 +1,12 @@
 .cuerpo{
     background-color: black;
 }
-/*.logo{
-    width: 900px;
-    height: 850px;
-    margin-left: 220px;
-}*/
+.logo{
+    display: flex;
+    justify-content: center;
+
+  
+}
 
 .barraInicio a:link{
     text-decoration: none;
@@ -60,7 +61,7 @@
 .piePagina{
     color:  #FFFFFF;
     font-family: 'Lora', serif;  
-    width: 00px; 
+     
 }
 footer{
     display: flex;
@@ -73,33 +74,37 @@ footer{
     
 }
 .redes img{
-    width: 100px;
-    height: 100px;
+
+    width: 50px;
+    height: 50px;
 
 }
 /*history*/
 h1{
     font-family:'Italianno';
-    color: #BF895A;
-}
-
-.ImagenFondo{
-    background-image: url("../imagenes/FondoHistory.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; 
-    height: 100%;
+    color:#E8D8A5;
 }
 .contexto{
+    color: white;
     font-family:'Judson' ;
-    font-size: 30px;
-    
+    font-size: 30px;     
+}
+.container-fluid img{
 
+    width: 509x;
+    height: 100px;
 }
 .horarios_img{
     width: 100% ;
     margin: 0;
     
+}
+.imagenes1{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background-position: center;
+    width: 20px;
 }
 .horarios{
     background-color: #BF895A;
@@ -123,7 +128,7 @@ h1{
 
 }
 .piePaginahis{
-    color: black;
+    color: white;
     font-family:'Italianno';
     font-size: 25px;
 }
