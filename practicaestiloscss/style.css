@@ -1,11 +1,187 @@
+
+/* animacio menu  hamburgesa*/
+.bars__menu{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+.bars__menu samp {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(53, 51, 153);
+    margin-top: 10px;
+    transform-origin: 0px 100%;
+    transition: all 300ms;
+}
+.activeline1__bars-,menu{
+    transform: rotate(45deg) translate(-2px,1px);
+}
+
+.activeline2__bars-,menu{
+    opacity: 0;
+    margin-left: -40px;
+ 
+}
+.activeline3__bars-,menu{
+    transform: rotate(-45deg) translate(-4px,2px);
+}
+/*heder*/
+header{
+    width: 100%;
+     position: fixed;
+     left: 0;
+     top: 0;
+}
+.heder__superior{
+    max-width: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.logo__heder:hover{
+    transform: scale(1.1);
+
+}
+.logo__heder{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    transition: all 3000ms;
+}
+/*menu heder*/
+.container__menu{
+    width: 100% ;
+    height: 70px;
+    padding: 0px 20px;
+    background-color: black;
+}
+.menu1  a:link{
+    text-decoration: none;
+    color: #E8D8A5;
+}
+.menu1 a:visited{
+    color: #E8D8A5;
+}
+.menu1{
+    display: flex;
+    max-width: 1080px;
+    margin: auto;
+    height: 100%;
+    font-family: 'Lora', serif;
+    justify-content: center ;
+}
+
+.nav{
+    height: 100%; 
+    
+}
+
+nav > ul{
+    height: 100%;
+    display: flex;
+}
+nav > ul > li{
+    height: 100%;
+    list-style: none;   
+    position: relative;
+}
+nav > ul > li:first-child > a{
+    background-image: url(../imagenes/ciervo\ \(1\).png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0px 40px;
+} 
+nav > ul > li:first-child:hover > a {
+    background-image: url(../imagenes/ciervo\ \(1\).png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+} 
+nav > ul > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    margin: 0px 40px;
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+nav > ul > li > a:hover{
+    transform: scale(1.1);
+    background: #96430056;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+ 
+.icon__menu> img{
+    font-size: 26px;
+    color: whitesmoke;
+    cursor: pointer;
+    width: 26px;
+    height: 100%;
+    display: none;
+    align-items: center;
+}
+#check__menu{
+    display: none;
+}
+#label__check{
+    width: 26px;
+    height: 100%;
+    display: none;
+}
+/*elemntos responsivos*/
+
+@media screen and (max-width: 720px ){ 
+
+    .heder__superior{
+        margin: 10px;
+    }
+    .logo__heder img{
+        width: 200px;
+    }
+    nav >ul{
+        flex-direction: column;
+        background-color:black;
+        position: fixed;
+        left: 0;
+        top: 158px;
+        width: 100%;
+        height: 300px;
+        transition: all 300ms ease;
+        z-index: 100;
+
+
+    }
+    nav > ul > li > a :hover{
+        transform: scale(1);
+    }
+    nav ul li ul{
+        left: 90px;
+    }
+    nav ul li:hover ul{}
+}
+
+
+/*inicio de pagina*/
+
 .cuerpo{
     background-color: black;
 }
 .logo{
     display: flex;
     justify-content: center;
-
-  
+    align-items: flex-end;
 }
 
 .barraInicio a:link{
@@ -17,18 +193,24 @@
     color: #E8D8A5;
     
 }
+.barraInicio:hover{
+    transform: scale(1.1);
+}
+
 .barraInicio{
     display:flex;
     justify-content: space-evenly;
     font-family: 'Lora', serif;
     font-size: 25px;
+    list-style: none;
+    transition: all 300ms ease;
 }
 .ubicacion{
     background: black; 
     border:black solid 10px;
     border-radius: 15px; 
     text-decoration: none;
-    color: #F2F2F2;
+    color: #F2F2F2;  
 }
 .inicio{
     background: black; 
@@ -42,7 +224,7 @@
     border: black solid  10px;
     border-radius: 15px;
 }
-.OLDSTORY{
+.contacto{
     background-color: black;
     border:black solid 10px;
     border-radius: 10px;
@@ -58,6 +240,7 @@
     border: black solid 10px;
     border-radius: 10px;
 }
+/*footer*/
 .piePagina{
     color:  #FFFFFF;
     font-family: 'Lora', serif;  
@@ -77,61 +260,91 @@ footer{
 
     width: 50px;
     height: 50px;
+    padding: 14px;
 
 }
 /*history*/
-h1{
-    font-family:'Italianno';
-    color:#E8D8A5;
+.todo{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border: solid orange 2px;
 }
-.contexto{
-    color: white;
-    font-family:'Judson' ;
-    font-size: 30px;     
-}
-.container-fluid img{
 
-    width: 509x;
-    height: 100px;
+.tituloHistoria{ 
+    grid-area: 1 / 1 / 3 / 3;
+    color: #FFFFFF;
+    font-family:'Lora', serif;
+    border: rgb(236, 13, 13) 2px solid;
 }
-.horarios_img{
+
+.horarios_img { 
     width: 100% ;
     margin: 0;
-    
-}
-.imagenes1{
-    display: flex;
-    justify-content: center;
-    height: 50px;
-    background-position: center;
-    width: 20px;
+    color: white;
+    border: solid green 2px;
+    grid-area: 1 / 5 / 4 / 7;
 }
 .horarios{
-    background-color: #BF895A;
+    border: solid  green 2px;
     color: #FFFFFF;
-    font-family:'Judson';
-    width: 250px;
-    text-align: center;
-    
-}
-.horarioTitulo{
-    font-family:'Italianno';
-    font-size: 40px;
-}
-.todo{
-    display:flex;
-    justify-content:space-between    ;
-}
-.tituloHistoria{
-    display:flex;
-    justify-content:flex-start;
 
 }
-.piePaginahis{
-    color: white;
-    font-family:'Italianno';
-    font-size: 25px;
+.horarioTitulo { 
+    background-color: black;
+    color: #FFFFFF;
+    width: 250px;
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-size: 40px;
+    border: solid white;
+    grid-area: 4 / 5 / 6 / 7; 
+
 }
+.imagenes1 {
+    display: flex;
+    grid-area: 1 / 3 / 2 / 5; 
+    justify-content: center;
+    border: white solid 2px;
+    width: 40px;
+    height: 30px;
+    border: solid saddlebrown 2px;
+}
+
+.imagenes2 { 
+    width: 509x;
+    height: 100px;
+    grid-area: 2 / 3 / 6 / 5; 
+    border: solid blue 2px;
+    
+}
+.imagenes3{ 
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 30px;
+    border: solid greenyellow 2px;
+    grid-area: 6 / 3 / 7 / 5; 
+}
+
+
+.dscripcion1 { 
+    color: white;
+    font-family: 'Lora', serif;
+    font-size: 30px;   
+    grid-area: 3 / 1 / 5 / 3; 
+    border: solid slateblue 2px;
+}
+.descirpcion2 {
+    color: white;
+    font-family: 'Lora', serif;
+    font-size: 30px;   
+    grid-area: 5 / 1 / 7 / 3;
+    border: solid rgb(6, 250, 217) 2px;
+}
+
 /*galeria*/
 .imagenes{
     display: flex;
@@ -150,13 +363,62 @@ h1{
     margin: 20px;
     width: 200px;
 }
- /*menu*/
+/*menu */
+.cuerpoMenu{
+    background-color: black;
+    color: white;
+}
+.oldstorytitulo{
+    text-align: center;
+    width: 100%;
+    color: #E9C87B;
+    font-family:  'Lora', serif;
+    font-family: 'Lora';
+    font-weight: 50;
+    font-size: 27px;
+    line-height: 78px;
+    letter-spacing: 1.5em;
+}    
+div.cosina{
+    color: white;
+    font-family: 'Lateef', cursive;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 10;
+    font-size: 15px;
+    line-height: 4px;
+    text-align: center;
+    letter-spacing: 1em;
+}
+.titulosComida{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31.7px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: 0.21em;
+
+    color: #E8D8A5;
+}
+div.descripciones{
+    font-family: 'Lateef';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32.7px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+}
+
+ /*cocteles*/
 
  .inicioMenu{
      display: flex;
      justify-content: space-between;
      align-items: baseline;
-
  }
 .platos{
     background: #BF895A; 
@@ -234,24 +496,7 @@ h1{
     text-align: center;
 }
 
-/* FORMULARIOS */
-.fondoFormulario{
-    background-color: #803B04;
 
-}
-
-.logo1{
-    width: 900px;
-    height: 550px;
-    margin-left: 220px;
-}
-
-.formulario{
-    background-color: #BF895A;
-    border: #BF895A solid 20px;
-    border-radius: 10px;
-
-}
 
 
 
