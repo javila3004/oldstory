@@ -1,87 +1,65 @@
+@import url('https://fonts.googleapis.com/css2? family= Lateef & family= Lora:ital@1 & display=swap');
 
-/* animacio menu  hamburgesa*/
-.bars__menu{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    cursor: pointer;
-    display: none;
-}
-.bars__menu samp {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: rgb(53, 51, 153);
-    margin-top: 10px;
-    transform-origin: 0px 100%;
-    transition: all 300ms;
-}
-.activeline1__bars-,menu{
-    transform: rotate(45deg) translate(-2px,1px);
-}
-
-.activeline2__bars-,menu{
-    opacity: 0;
-    margin-left: -40px;
- 
-}
-.activeline3__bars-,menu{
-    transform: rotate(-45deg) translate(-4px,2px);
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
 }
 /*heder*/
+/*
 header{
     width: 100%;
-     position: fixed;
-     left: 0;
-     top: 0;
+    *position: fixed;
+    left: 100%;
+    top: 100%;
 }
 .heder__superior{
-    max-width: 20px;
+    max-width: 1280px;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    margin: 20px;
 }
 .logo__heder:hover{
     transform: scale(1.1);
 
 }
-.logo__heder{
+.logo__heder img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 350px;
     transition: all 3000ms;
 }
 /*menu heder*/
+/*
 .container__menu{
     width: 100% ;
     height: 70px;
     padding: 0px 20px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+
 }
-.menu1  a:link{
+.menu  a:link{
     text-decoration: none;
     color: #E8D8A5;
 }
-.menu1 a:visited{
+.menu a:visited{
     color: #E8D8A5;
 }
-.menu1{
+.menu{
     display: flex;
-    max-width: 1080px;
-    margin: auto;
-    height: 100%;
+    justify-content: center center;
     font-family: 'Lora', serif;
-    justify-content: center ;
+    height: 100%;
 }
-
 .nav{
-    height: 100%; 
-    
+    height: 100%;    
 }
-
 nav > ul{
     height: 100%;
     display: flex;
@@ -93,14 +71,14 @@ nav > ul > li{
 }
 nav > ul > li:first-child > a{
     background-image: url(../imagenes/ciervo\ \(1\).png);
-    background-size: 24px;
+    background-size: 30px;
     background-repeat: no-repeat;
     background-position: center center;
     margin: 0px 40px;
 } 
 nav > ul > li:first-child:hover > a {
     background-image: url(../imagenes/ciervo\ \(1\).png);
-    background-size: 24px;
+    background-size: 74px;
     background-repeat: no-repeat;
     background-position: center center;
 } 
@@ -112,43 +90,46 @@ nav > ul > li > a{
     align-items:  center;
     margin: 0px 40px;
     font-family: 'Lora', serif;
-    font-size: 14px;
     text-transform: uppercase;
+    font-size: 14px;
     transition: all 300ms ease;
 }
 nav > ul > li > a:hover{
     transform: scale(1.1);
     background: #96430056;
     border-radius: 50px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
 }
- 
-.icon__menu> img{
+#label__check{
+    width: 26px;
+    height: 100%;
+    *display: none;
+    background-color: #FFFFFF;
+}
+.icon__menu{
     font-size: 26px;
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     width: 26px;
     height: 100%;
-    display: none;
+    *display: none;
     align-items: center;
 }
 #check__menu{
     display: none;
 }
-#label__check{
-    width: 26px;
-    height: 100%;
-    display: none;
+.fa-solid{
+    color: #FFFFFF;
 }
-/*elemntos responsivos*/
-
-@media screen and (max-width: 720px ){ 
+/*elemntos responsivos*/    
+/*
+@media screen and (max-width: 900px ){ 
 
     .heder__superior{
-        margin: 10px;
+        padding: 10px;
     }
     .logo__heder img{
-        width: 200px;
+        width: 250px;
     }
     nav >ul{
         flex-direction: column;
@@ -157,90 +138,30 @@ nav > ul > li > a:hover{
         left: 0;
         top: 158px;
         width: 100%;
-        height: 300px;
+        height: 0px;
         transition: all 300ms ease;
         z-index: 100;
-
-
+        opacity: 0;
+        visibility: hidden ;
     }
     nav > ul > li > a :hover{
         transform: scale(1);
     }
-    nav ul li ul{
-        left: 90px;
+    #label__check{
+        display: block;
     }
-    nav ul li:hover ul{}
+    .icon__menu{
+        display: none;
+    }
+    #check__menu:checked ~ nav >ul{
+        height: 300px;
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
-
-/*inicio de pagina*/
-
-.cuerpo{
-    background-color: black;
-}
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.barraInicio a:link{
-    text-decoration: none;
-    color: #E8D8A5;
-;
-}
-.barraInicio a:visited{
-    color: #E8D8A5;
-    
-}
-.barraInicio:hover{
-    transform: scale(1.1);
-}
-
-.barraInicio{
-    display:flex;
-    justify-content: space-evenly;
-    font-family: 'Lora', serif;
-    font-size: 25px;
-    list-style: none;
-    transition: all 300ms ease;
-}
-.ubicacion{
-    background: black; 
-    border:black solid 10px;
-    border-radius: 15px; 
-    text-decoration: none;
-    color: #F2F2F2;  
-}
-.inicio{
-    background: black; 
-    border:black solid 10px;
-    border-radius: 15px; 
-    text-decoration: none;
-    color: #F2F2F2;
-}
-.menu{
-    background-color: black;
-    border: black solid  10px;
-    border-radius: 15px;
-}
-.contacto{
-    background-color: black;
-    border:black solid 10px;
-    border-radius: 10px;
-}
-.historia{
-    background-color: black;
-    border: black solid 10px;
-    border-radius: 10px;
-}
-
-.galeria{
-    background-color: black ;
-    border: black solid 10px;
-    border-radius: 10px;
-}
 /*footer*/
+/*
 .piePagina{
     color:  #FFFFFF;
     font-family: 'Lora', serif;  
@@ -261,249 +182,225 @@ footer{
     width: 50px;
     height: 50px;
     padding: 14px;
-
 }
-/*history*/
-.todo{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    border: solid orange 2px;
+/*inicio de pagina*/
+/*
+.cuerpo {
+    background-color: rgb(0, 0, 0);
 }
-
-.tituloHistoria{ 
-    grid-area: 1 / 1 / 3 / 3;
-    color: #FFFFFF;
-    font-family:'Lora', serif;
-    border: rgb(236, 13, 13) 2px solid;
-}
-
-.horarios_img { 
-    width: 100% ;
-    margin: 0;
-    color: white;
-    border: solid green 2px;
-    grid-area: 1 / 5 / 4 / 7;
-}
-.horarios{
-    border: solid  green 2px;
-    color: #FFFFFF;
-
-}
-.horarioTitulo { 
-    background-color: black;
-    color: #FFFFFF;
-    width: 250px;
-    text-align: center;
-    font-family: 'Lora', serif;
-    font-size: 40px;
-    border: solid white;
-    grid-area: 4 / 5 / 6 / 7; 
-
-}
-.imagenes1 {
-    display: flex;
-    grid-area: 1 / 3 / 2 / 5; 
-    justify-content: center;
-    border: white solid 2px;
-    width: 40px;
-    height: 30px;
-    border: solid saddlebrown 2px;
-}
-
-.imagenes2 { 
-    width: 509x;
-    height: 100px;
-    grid-area: 2 / 3 / 6 / 5; 
-    border: solid blue 2px;
-    
-}
-.imagenes3{ 
+.logo {
     display: flex;
     justify-content: center;
-    width: 40px;
-    height: 30px;
-    border: solid greenyellow 2px;
-    grid-area: 6 / 3 / 7 / 5; 
+    align-items: flex-end;
 }
-
-
-.dscripcion1 { 
-    color: white;
-    font-family: 'Lora', serif;
-    font-size: 30px;   
-    grid-area: 3 / 1 / 5 / 3; 
-    border: solid slateblue 2px;
-}
-.descirpcion2 {
-    color: white;
-    font-family: 'Lora', serif;
-    font-size: 30px;   
-    grid-area: 5 / 1 / 7 / 3;
-    border: solid rgb(6, 250, 217) 2px;
-}
-
-/*galeria*/
-.imagenes{
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    border: black solid 2px;
-    color: #5D5D5D;
-    
-}
-.colorFondo{
-    background-color: #5D5D5D;
-
-}
-.galery{
-    border-radius: 20px;
-    margin: 20px;
-    width: 200px;
-}
-/*menu */
-.cuerpoMenu{
-    background-color: black;
-    color: white;
-}
-.oldstorytitulo{
-    text-align: center;
+*/
+header{
     width: 100%;
-    color: #E9C87B;
-    font-family:  'Lora', serif;
-    font-family: 'Lora';
-    font-weight: 50;
-    font-size: 27px;
-    line-height: 78px;
-    letter-spacing: 1.5em;
-}    
-div.cosina{
-    color: white;
-    font-family: 'Lateef', cursive;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 10;
-    font-size: 15px;
-    line-height: 4px;
-    text-align: center;
-    letter-spacing: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
 }
-.titulosComida{
-    font-family: 'Lora';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 31.7px;
-    line-height: 41px;
-    text-align: center;
-    letter-spacing: 0.21em;
-
-    color: #E8D8A5;
-}
-div.descripciones{
-    font-family: 'Lateef';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32.7px;
-    line-height: 47px;
-    text-align: center;
-    letter-spacing: 0.01em;
-
-    color: #FFFFFF;
-}
-
- /*cocteles*/
-
- .inicioMenu{
-     display: flex;
-     justify-content: space-between;
-     align-items: baseline;
- }
-.platos{
-    background: #BF895A; 
-    border: #BF895A solid 10px;
-    border-radius: 15px; 
-    text-decoration: none;
-    color: #F2F2F2;
-   
-}
-.cerveza{
-    background: #BF895A; 
-    border: #BF895A solid 10px;
-    border-radius: 15px; 
-    text-decoration: none;
-    color: #F2F2F2;
-
-}
-.cocteles{
+/*heder superior*/
+.herder__superior{
     display: flex;
+    max-width: 1440px;
+    margin: auto;    
+    align-items: center;
     justify-content: space-between;
+    padding: 20px;  
+}
+.logo img{
+    width: 300px;
+    transition: all 300ms ease;
+
+}
+.logo:hover{
+transform: scale(1.1);
+
+}
+.search input{
+    width: 300px;
+    padding: 10px;
+}
+/*barramenu*/
+.container__menu{
     width: 100%;
-    font-family: 'Judson';
-    color: #FFFFFF;
+    height: 70px;
+    background-color: rgb(0, 0, 0);
+    padding: 0px 20px;
 }
-.coctelesEspecificos{
-    width: 50% ;
+.menu{
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
 }
-.imgLimon{
-    width: 80% ;
+nav{
+    height: 100%;
 }
-
-.precios{
-    display: flex;
+nav > ul {
+    height: 100%;
+    display: flex; 
     justify-content: space-between;
-    align-items: baseline;
-}
- .cocteles h2{
-     font-family: 'Italianno';
-     color: #BF895A;
-
- }
-/*cervezas*/
-
-.tituloCevezas{   
-    font-family: 'Judson';
-    color: #FFFFFF;
 
 }
-/*ubicacion*/
-
-
-.imagenesUbicacion{
-    display: flex;
-    justify-content: space-between;
-    border: black solid 10px;
-    width: 10%;
-    gap: 40px;
+nav>ul>li{
+    height: 100%;
+    list-style: none;
+    position: relative;
 }
-.imgUbicacion{
-    width:100% ;
+nav > ul > li:first-child > a{
+    background-image: url(../imagenes/ciervo\ \(1\).png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 40px;
 }
-.redesOrisontal{
-    display: flex;
-    justify-content: flex-end;
+nav > ul > li:first-child:hover > a{
+    background-image: url(../imagenes/ciervo\ \(1\).png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+nav> ul > li > a{
     width: 100%;
-    color: #FFFFFF;
-}
-.informacion{
+    height: 100%;
     display: flex;
     justify-content: space-around;
-    font-family: 'Italianno' ;
+    align-items: center;
+    padding: 14px ;
+    color:#E8D8A5 ;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease;
+}
+nav> ul > li > a:hover{
+    transform: scale(1.1);
+    background-color: #803B04;
+    box-shadow: 0px 0px 10px 0px rgba(#3d1f07) ;
+    border-bottom-left-radius: 100px;
+}
+#selected{
+    transform: scale(1.1);
+    background-color: #803B04;
+    box-shadow: 0px 0px 10px 0px rgba(#3d1f07) ;
+    border-bottom-left-radius: 100px;
+}
+/*sub menu*/
+nav> ul >li >ul{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 90px;
+    left: -5px;
+    padding: 10px 0px ;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgb(rgba(#6d3405), 0, 0);
+    z-index: 10;
+    transition: all 300ms ease;
+}
+nav> ul >li:hover >ul{
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+nav ul li ul:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #ffffff;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+}
+nav ul li ul li a{
+    display: flex;
+    color:#E8D8A5 ;
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: 14px;
+    justify-content: center;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+nav ul li ul li a:hover{
+    background: #7a3700;
+    border-radius: 20px;
+    color:  white;
+    transform: scale(1.1);
+    padding-left: 10px;
+    font-size: 10px;
+    box-shadow: 0px 0px 10px 0px rgb(rgba(#6d3405), 0, 0);
 
-    width: 100%;
-    color: #FFFFFF;
-    text-align: center;
+}
+/*ELEMENTOS RESPONSIVE*/
+.icon__menu{
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    width: 20px ;
+    height: 100%;
+    display: none;
+    align-items: center;
+}
+#check__menu{
+    display: none;
 }
 
+@media screen and (max-width: 720px ) {
 
+    .search input{
+        display: none;
+    }
+    .herder__superior{
+        padding: 10px;
+    }
+    .logo img{
+        width: 200px;
+        padding: 0 15px; 
+    }
+    nav>ul{
+        flex-direction: column;
+        background-color: black;
+        position: fixed;
+        left: 0px;
+        top: 158px;
+        width: 100%;
+        height: 0px;
+        transition: all 300ms ease;
+        z-index: 10;
+        opacity: 0;
+        visibility: hidden;
+    }
+    nav > ul li .a:hover{
+        transform: scale(1.1);
+    }
+    nav ul li ul{
+        left: 90px;
+    }
+    nav ul li:hover ul{
+        top: 50px;
+    }
+    nav > ul >li:first-child a {
+        background-position: 20px;
+    }
+    #selected{
+        transform: scale(1.1);
+    }
+    .icon__menu{
+        display: flex;
+    }
+    #check__menu:checked ~ nav > ul {
+        height: 300px;
+        visibility: visible;
+        opacity: 1;
 
-
-
-
-
-
-
-
-
-
+    }
+}   

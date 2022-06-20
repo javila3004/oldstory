@@ -5,39 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="practicaestiloscss/style.css">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/deecc74a5a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="script.js/script.js">
+    
+    <title>OLDSTORY</title>
 </head>
-<body>
+<body class="cuerpo">
     <header>
-        <div class="hede__superior">
-            <div class="logo__heder">
-                <img src="imagenes/LogoHistoriaMenuHamburguesa.svg" alt=" logo__heder">
+        <div class="herder__superior">
+            <div class="logo">
+                <img src="imagenes/LogoHistoriaMenuHamburguesa.svg" alt="logo">
+            </div>
+            <div class="search">
+                <input type="search" placeholder="Que deseas buscar">
             </div>
         </div>
+        
         <div class="container__menu">
-            <div class="menu1">
+            
+            <div class="menu">
                 <input type="checkbox" id="check__menu">
-                <label id="label__check " for=" check__menu icon__menu">
-                    <img src="imagenes/icono2.png" alt="linea munus ">
+                <label for="check__menu">
+                    <i class="fa-solid fa-bars icon__menu"></i>
                 </label>
                 <nav>
                     <ul>
-                        <li><a href="index.html" ></a></li>
-                        <li><a href="historia.html">HISTORIA</a></li>
-                        <li><a href="menu.html">MENU</a></li>
-                        <li><a href="ubicaciones.html">UBICACION</a></li>
-                        <li><a href="galeria.html"> GALERIA</a></li>
-                        <li><a href="contacto.html">CONTACTO</a></li>
+                        <li><a href="#"  ></a></li>
+                        <li><a href="#">historia</a></li>
+                        <li><a href="#">galeria</a></li>
+                        <li><a href="#">menu</a>
+                            <ul>
+                                <li><a href="#">cocteles</a></li>
+                                <li><a href="#">cervezas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">ubicacion</a></li>
+                        <li><a href="# " id="selected" >caontacto</a></li>
                     </ul>
                 </nav>
             </div>
+
         </div>
-        <div class="bars__menu">
-            <span class="line1__bars-menu"></span>
-            <span class="line2__bars-menu"></span>
-            <span class="line3__bars-menu"></span>
-        </div>
-    
-        <script src="script.js/script.js"></script>
+
+    </header>
 </body>
 </html>
