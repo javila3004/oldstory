@@ -15,7 +15,7 @@
 /*footer*/
 
 .piePagina{
-    color:  #FFFFFF;
+    color: #E8D8A5;
     font-family: 'Lora', serif;  
      
 }
@@ -43,8 +43,6 @@ footer{
 .logo__Principal img{
     width: 500px;
 }
-
-
 /*heder superior*/
 
 header{
@@ -64,7 +62,6 @@ header{
     width: 250px;
     padding: 20px;
 }
-
 
 .search input{
     width: 300px;
@@ -278,9 +275,121 @@ nav ul li ul li a:hover{
 }
 #imgbarra{
     width: 200px;
-    left: 200px;
+    left: 20%;
     background-color: #292523;
     font-size: 11px;
+}
+#imgCentral{
+    width: 100%;
+}
 
+/*cervezas*/
+#titulos{
+    color: #E9C87B;
+    font-family: 'Lateef', cursive;
+    text-align: center;
+    transition: all 300ms ease;
+    border: #292523 solid 2px;
+    position: relative;
+    left: 15px ;
+    right: 20px;
 
+}
+#precios{
+    color: #803B04;
+    font-family: 'Lateef', cursive;
+    text-align: center;
+    transition: all 300ms ease;
+    position: relative;
+    left: 15px;
+    right: 20px;
+}
+#titulos:hover{
+    transform: scale(1.05);
+}
+#precios:hover{
+    *transform: scale(1.05);
+}
+#imagenFondo img{
+    height: auto;
+    visibility: none;
+}
+/*menu*/
+#tituloMenu{
+    background-color: #292523;
+    color: #E8D8A5;
+}
+#fondoMenu{
+    background-color: #292523;
+    color: #FFFFFF;
+    text-align: center;
+}
+#menuFondo{
+    background-color: #803B04;
+}
+/*cocteles*/
+#ciervo{
+    height: 250px;
+    border: #292523 solid 2px;
+}
+/*formulario*/
+.formulario{
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px ;
+    padding: 20px;
+    color: #E8D8A5;
+    background-color: #292523;
+    box-shadow: 0 0 20px 1px #292523 ;
+    position: relative;    
+}
+.formulario__titulo{
+    text-align: center;
+    margin-top: 15px;
+    color: #E9C87B;
+    height: 50px;
+}
+.formulario__input, .formulario__label, .formulario__submit{
+    display: block;
+    width: 100%;
+    font-size: 1.1em;
+    border-color: #803B04;
+    color: #E9C87B;  
+    *margin-bottom: 50px;
+    
+}
+.formulario__input{
+    padding: 20px;
+    background: rgba(59, 54, 54, 0.1);
+    border: 1px solid rgba(0,0,0,0.6 );
+    margin-bottom: 40px;
+
+}
+.formulario__input:focus{
+    outline: 1px rgb(rgba(#292523), 0, 1);
+}
+.formulario__input:focus + .formulario__label{
+    margin-top: -135px;
+}
+.formulario__label{
+    padding-left: 95px;
+    position: absolute;
+    margin: -85px;
+    color: #E8D8A5;
+    background-color: transparent;
+    *z-index: -20;
+    transition: all 300ms ease; 
+}
+.formulario__submit{
+    background: rgb(rgba(#803B04), 0, 1);
+    color: #ffffff;
+    padding: 20px 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #292523;
+    border: solid 3px #803B04;
+}
+.fijar{
+    margin-top: -135px;
 }

@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lateef&family=Lora:ital@1&display=swap" rel="stylesheet">  
     <script src="https://kit.fontawesome.com/deecc74a5a.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
     <title> BEER OLDSTORY</title>
 </head>
@@ -49,76 +50,95 @@
         </div>
 
     </header>
-    <main>
-        <div class="oldstorytitulo">
-            <h1 >OLDSTORY</h1>
-            <div class="cosina">
-                <h2>COCINA GURMET</h2>
+    <main class="espacio" >
+        <!--acordion-->
+        <div class="accordion accordion-flush" id="accordionFlushExample" id="menuFondo" >
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" id="tituloMenu">
+                    Bife dorado • $200 
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body" id="fondoMenu">Bistec de arrachera, lentejas refritas, kale, granada y corteza de nuez.</div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" id="tituloMenu">
+                    Muslo de pollo • $250
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body" id="fondoMenu">Muslo de pollo frito, champiñones, cebollas balsámicas, queso pachi pachi .</div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" id="tituloMenu">
+                    Mejillones a la cerveza • $300
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample" id="fondoMenu">
+                <div class="accordion-body" id="fondoMenu">Mejillones, cerveza dorada local, ajo, jengibre, jalapeño, papas fritas y alioli de limón.</div>
+            </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour" id="tituloMenu">
+                    Pollo con trufas • $300
+                </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body" id="fondoMenu">Pollo, chícharos, papas, zanahorias, champiñones, cebollas perla, ensalada de la casa  .</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive" id="tituloMenu">
+                    Pizza de salmón asado • $300
+                </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body" id="fondoMenu">Repollitos de bruselas y hash de cerdo, huevo frito, eneldo, emulsión de cítricos .</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix" id="tituloMenu">
+                    Pizza de pimienta negra • $300
+                </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body" id="fondoMenu">Masa casera, mantequilla de limón asado, parmesano.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven" id="tituloMenu">
+                    Bife con papas • $200 
+                </button>
+                </h2>
+                <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body" id="fondoMenu">Bife a término medio con guarnición de papas.</div>
+                </div>
             </div>
         </div>
-        <div class=" titulosComida">
-            <h3>  Bife dorado • $200  </h3>
-            <div class="descripciones">
-                <p>Bistec de arrachera, lentejas refritas, kale, granada y corteza de nuez  </p>
-            </div>
-        </div>
-        <div class=" titulosComida">
-            <h3>  Muslo de pollo • $250  </h3>
-            <div class="descripciones">
-                <p> Muslo de pollo frito, champiñones, cebollas balsámicas, queso pachi pachi   </p>
-            </div>
-        </div>
-        <div class=" titulosComida">
-            <h3>   Mejillones a la cerveza • $300  </h3>
-            <div class="descripciones">
-                <p>Mejillones, cerveza dorada local, ajo, jengibre, jalapeño, papas fritas y alioli de limón  </p>
-            </div>
-        </div>
-        <div class=" titulosComida">
-            <h3> Pollo con trufas • $300 </h3>
-            <div class="descripciones">
-                <p> Pollo, chícharos, papas, zanahorias, champiñones, cebollas perla, ensalada de la casa  </p>
-            </div>
-        </div>
-        <div class=" titulosComida">
-            <h3>  Pizza de salmón asado • $300  </h3>
-            <div class="descripciones">
-                <p> Repollitos de bruselas y hash de cerdo, huevo frito, eneldo, emulsión de cítricos   </p>
-            </div>
-        </div >
-        <div class=" titulosComida">
-            <h3> Pizza de pimienta negra • $300 </h3>
-                <div class="descripciones">
-                <p>Masa casera, mantequilla de limón asado, parmesano </p>
-            </div>
-        </div>
-        <div class=" titulosComida">
-            <h3> Bife con papas • $200  </h3>
-            <div class="descripciones">
-                <p> Bife a término medio con guarnición de papas</p>
-            </div>
-        </div>
-
-        <di class="imagen__Bambu">
-            <img src="imagenes/bambu.svg" alt="Bambu">
-        </di>
-        <di class="imagen__Piza">
-            <img src="imagenes/logomenu2.svg" alt="Pizza">
-        </di>
+        
     </main>
 
     <footer>
         <p class="piePagina">No te pierdas de esta gran experiencia</p>
-        
+      
         <div class="redes">
-            <img src="imagenes/galeria.2/instagram (1).png" alt="Intagram">
-            <img src="imagenes/galeria.2/facebook.png" alt="Facebook">
-            <img src="imagenes/galeria.2/twitter.png" alt="twitter ">
-
+            <img src="../imagenes/instabrown.svg" alt="Intagram">
+            <img src="../imagenes/facebromn.svg" alt="Facebook">
+            <img src="../imagenes/twiterbrowm.svg" alt="twitter ">
+    
         </div>
 
     </footer>
-    <script src="script.js/script.js"></script>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

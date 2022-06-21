@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/deecc74a5a.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lateef&family=Lora:ital@1&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
     <title> BEER OLDSTORY</title>
 </head>
@@ -34,7 +35,7 @@
                         <li><a href="../index.html" ></a></li>
                         <li><a href="historia.html">HISTORIA</a></li>
                         <li><a href="galeria.html"  >GALERIA</a></li>
-                        <li><a href="menu.html">MENU</a>
+                        <li><a href="menu.html" id="selected">MENU</a>
                             <ul>
                                 <li><a href="cocteles.html" id="selected">COCTELES</a></li>
                                 <li><a href="cevezas.html"  >CERVEZAS</a></li>
@@ -49,104 +50,109 @@
         </div>
 
     </header>
-    <div class="cocteles">
-        <div class="coctelesEspecificos">
-            <h2 class="etrasTitulos">
-                Old Fashioned
-            </h2>
-            <p>Tradicionalmente se sirve en un vaso corto llamado ‘Old Fashioned’, de ahí el nombre.</p>
-    
-            <ul>
-                <li>Hielos</li>
-                <li>50 mililitros de whiskey</li>
-                <li>1 cucharada de azúcar</li>
-                <li> 3 gotas de Angostura Bitter</li>
-                <li>Cáscara de naranja</li>
-                
-            </ul>
-            <div class="precios">
-                <p>$5.000</p>
-            </div> 
-    
-        </div>
-            <div class="coctelesEspecificos">   
-                <h2>
-                    WHISKY SOUR
-                </h2>
-            <p>disfruta de una bebida extraordinaria lacual es ideal para cualquier ocacion </p>
-    
-            <ul>
-                <li>Hielos</li>
-                <li>45 mililitros de whisk</li>
-                <li>30 mililitros de zumo de limón</li>
-                <li>2 cucharaditas de azúcar</li>
-                <li>cáscara de limón</li>
-            </ul>
-            <div class="precios">
-                <p>$5.000</p>
+    <main class="espacio">
+        <div class="row row-cols-1 row-cols-md-2 g-6">
+            <div class="col">
+              <div class="card" id="titulos">
+                <div class="card-body" >
+                  <h1 class="card-title"id="titulos">OLD FASHIONED</h1>
+                  <p class="card-text" id="parrafo1">Tradicionalmente se sirve en un vaso corto llamado ‘Old Fashioned’, de ahí el nombre.</p>
+                  <Ul class="card-text" id="parrafo1">
+                    <li>Hielos</li>
+                    <li>50 mililitros de whiskey</li>
+                    <li>1 cucharada de azúcar</li>
+                    <li> 3 gotas de Angostura Bitter</li>
+                    <li>Cáscara de naranja</li>
+                </Ul>
+                <h2 class="card-title" id="precios">$5.000</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" id="titulos">
+                <div class="card-body">
+                  <h1 class="card-title" id="titulos">WHISKY SOUR</h1>
+                  <p class="card-text" id="parrafo1">Disfruta de una bebida extraordinaria lacual es ideal para cualquier ocacion.</p>
+                  <ul class="card-text" id="parrafo1">
+                    <li>Hielos</li>
+                    <li>45 mililitros de whisk</li>
+                    <li>30 mililitros de zumo de limón</li>
+                    <li>2 cucharaditas de azúcar</li>
+                    <li>cáscara de limón</li>
+                   </ul>
+                   <h2 class="card-title" id="precios">$5.000</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" id="titulos">
+                <div class="card-body">
+                  <h1 class="card-title" id="titulos">DAIQUIRI</h1>
+                  <p class="card-text" id="parrafo1">esta es una de nuestras mejores bebidas,degusta tu paladar con esta exquisita y refrescante coctel.</p>
+                  <ul class="card-text" id="parrafo1">
+                    <li>Hielo</li>
+                    <li>45 mililitros de Ron</li>
+                    <li>30 mililitros de jugo de limón</li>
+                    <li>15 mililitros de jarabe</li>
+                    <li>cáscara de limón</li>        
+                  </ul>
+                  <h2 class="card-title" id="precios">$5.000</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" id="titulos">
+                <img src="../imagenes/venadoSolo.svg" class="card-img-top" alt="venado" id="ciervo">
+              </div>
             </div>
         </div>
-    </div>
-    
-    <div class="cocteles">
-    
-        <div class="coctelesEspecificos">
-            <h2>DAIQUIRI</h2>
-            <p>esta es una de nuestras mejores bebidas,degusta tu paladar con esta exquisita y refrescante coctel </p>
-            <ul>
-                <li>Hielo</li>
-                <li>45 mililitros de Ron</li>
-                <li>30 mililitros de jugo de limón</li>
-                <li>15 mililitros de jarabe</li>
-                <li>cáscara de limón</li>        
-            </ul>
-            <div class="precios">
-                <p>$5.000</p>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card" id="titulos">
+                <div class="card-body">
+                  <h1 class="card-title" id="titulos">NEGRONI</h1>
+                  <p class="card-text"id="parrafo1" >Este es uno de nuestros mejores cocteles gracias a que es un tradicional de la casa disfruta de una bebida exquisita la cual contiene.</p>
+                  <ul class="card-text" id="parrafo1">
+                    <li>Hielo</li>
+                    <li>30 mililitros de Ginebra</li>
+                    <li>30 mililitros de Vermouth dulce</li>
+                    <li>1 rodaja de naranja</li>
+                    <li>30 mililitros de Campari</li>       
+                  </ul>
+                  <h2 class="card-title" id="precios">$5.000</h2>
+                </div>
+              </div>
             </div>
-        </div>
-    
-        <div class="coctelesEspecificos">
-            <h2>NEGRONI</h2>
-            <p>Este es uno de nuestros mejores cocteles gracias a que es un tradicional de la casa disfruta de una bebida exquisita la cual contiene</p>
-            <ul>
-                <li>Hielo</li>
-                <li>30 mililitros de Ginebra</li>
-                <li>30 mililitros de Vermouth dulce</li>
-                <li>1 rodaja de naranja</li>
-                <li>30 mililitros de Campari</li>
-            
-            </ul>
-            <div class="precios">
-                <p>$5.000</p>
+            <div class="col">
+              <div class="card" id="titulos">
+                <div class="card-body">
+                  <h1 class="card-title" id="titulos">MOSCOW MULE</h1>
+                  <p class="card-text"id="parrafo1">Pero fue en los años 40 cuando se juntaron las ideas del propietario de un bar en Los Ángeles con las de un productor de cerveza de jengibre (ginger beer) y un distribuidor de destilados, y el resultado fue la invención del hoy muy, muy conocido coctel, el Moscow Mule.
+                    Es de esas recetas de cocteles que no puedes dejar de preparar.</p>
+                    <ul class="card-text" id="parrafo1">
+                        <li>Cubos de hielo</li>
+                        <li>1/4 de taza de vodka</li>
+                        <li>1 cucharada de jugo de limón </li>
+                        <li>2 taza de ginger beer</li>
+                        <li>1 cuarto de limón amarillo o italiano</li></li>      
+                      </ul>
+                      <h2 class="card-title" id="precios">$5.000</h2>
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
-    
-    <div class="cocteles">
-        <div class="coctelesEspecificos">
-            <h2>MOSCOW MULE</h2>
-            <p>Pero fue en los años 40 cuando se juntaron las ideas del propietario de un bar en Los Ángeles con las de un productor de cerveza de jengibre (ginger beer) y un distribuidor de destilados, y el resultado fue la invención del hoy muy, muy conocido coctel, el Moscow Mule.
-                Es de esas recetas de cocteles que no puedes dejar de preparar</p>
-            <ul>
-                <li>Cubos de hielo</li>
-                <li>1/4 de taza de vodka</li>
-                <li>1 cucharada de jugo de limón </li>
-                <li>2 taza de ginger beer</li>
-                <li>1 cuarto de limón amarillo o italiano</li></li>
-            </ul>
-            <div class="precios">
-                <p>$5.000</p>
-            </div>
-        </div>
-        <div class="imgLimon">
-           <img src="imagenes/fondoMenu.svg" alt="imagen de un limon " class="imgLimon">
-        </div>
-    </div>
+          </div>
+    </main>
+        
     <footer>
-        <img src="imagenes/haburgesamenu.svg" alt="hamburgesa">
-        <img src="imagenes/cervezamenu.svg" alt="cerveza">
-        <a href="index.html" class="inicio"> INICIO </a>
-        <p>no te pierdas de esta gran experiencia</p> 
+        <p class="piePagina">No te pierdas de esta gran experiencia</p>
+      
+        <div class="redes">
+            <img src="../imagenes/instabrown.svg" alt="Intagram">
+            <img src="../imagenes/facebromn.svg" alt="Facebook">
+            <img src="../imagenes/twiterbrowm.svg" alt="twitter ">
+    
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
