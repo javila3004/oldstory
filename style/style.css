@@ -10,8 +10,6 @@
     background-color: #292523;
 }
 
-
-
 /*footer*/
 
 .piePagina{
@@ -201,7 +199,7 @@ nav ul li ul li a:hover{
     cursor: pointer;
     width: 20px ;
     height: 100%;
-    display: none;
+    display: none ;
     align-items: center;
 }
 #check__menu{

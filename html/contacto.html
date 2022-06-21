@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/deecc74a5a.js" crossorigin="anonymous"></script>
-    
-    
-    <title>OLDSTORY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Judson:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+    <title> CONTACTO</title>
 </head>
 <body >
     <header>
@@ -32,7 +33,7 @@
                     <ul>
                         <li><a href="../index.html" ></a></li>
                         <li><a href="historia.html">HISTORIA</a></li>
-                        <li><a href="galeria.html"  >GALERIA</a></li>
+                        <li><a href="galeria.html" >GALERIA</a></li>
                         <li><a href="menu.html">MENU</a>
                             <ul>
                                 <li><a href="cocteles.html">COCTELES</a></li>
@@ -40,7 +41,7 @@
                             </ul>
                         </li>
                         <li><a href="ubicaciones.html">UBICACION</a></li>
-                        <li><a href="contacto.html" id="selected">CONTACTO</a></li>
+                        <li><a href="contacto.html"  id="selected">CONTACTO</a></li>
                     </ul>
                 </nav>
             </div>
@@ -51,15 +52,15 @@
     <main>
         <form action="" class="formulario">
             <h1 class="formulario__titulo">CONTACTANOS</h1>
-            <input type="text" class="formulario__input">
+            <input type="text" class="formulario__input" required>
             <label for="" class="formulario__label">Nombres</label>
-            <input type="text" class="formulario__input">
+            <input type="text" class="formulario__input" required>
             <label for="" class="formulario__label">Correo</label>
-            <input type="text" class="formulario__input">
+            <input type="text" class="formulario__input" required>
             <label for="" class="formulario__label">Celular</label>
-            <input type="text" class="formulario__input">
+            <input type="text" class="formulario__input" required>
             <label for="" class="formulario__label">Comentarios</label>
-            <input type="submit" name="enviar" class="formulario__submit">
+            <button class="formulario__submit" type="button">enviar</button>    
         </form>
         <footer>
         <p class="piePagina">No te pierdas de esta gran experiencia</p>
